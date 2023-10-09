@@ -28,7 +28,7 @@ html {
 
 body {
   margin: 0;
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-base);
 }
 
 img {
@@ -45,6 +45,12 @@ img {
 nav ul li {
   padding-left: 1.25em;
   list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
 }
 
 nav ul {
@@ -91,10 +97,6 @@ strong {
   text-transform: uppercase;
 }
 
-p {
-  
-}
-
 img {
   border-radius: 5px;
 }
@@ -109,8 +111,30 @@ img {
 }
 
 #behind-the-dough {
+  padding: 2em 0;
+}
+
+#quotes {
   background-color: black;
   color: white;
   padding: 2em 0;
 }
 
+h2 {
+  text-align: center;
+  font-size: var(--font-size-md);
+}
+
+#try-it {
+  text-align: center;
+}
+
+article {
+  margin-bottom 2em;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+article > img {
+  border-radius: 5px 5px 0 0;
+}
