@@ -1,5 +1,11 @@
 :root {
-
+  --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+--font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+--font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+--font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+--font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+--font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+--font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
 }
 
 * {
@@ -29,5 +35,80 @@ img {
   max-width: 100%;
 }
 
+#header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+nav ul li {
+  padding-left: 1.25em;
+  list-style-type: none;
+}
 
+nav ul {
+  display: flex;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2em;
+}
+
+.product-shot {
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2em;
+}
+
+.product-shot #span-product {
+  grid-column: 1/4;
+}
+
+.try-it-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+
+footer {
+  text-align: center;
+}
+
+#header {
+  text-transform: uppercase;
+  padding: 2em 0;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+strong {
+  text-transform: uppercase;
+}
+
+p {
+  
+}
+
+img {
+  border-radius: 5px;
+}
+
+#add-to-cart {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 1em 2em;
+  font-size: 1em;
+  margin-bottom: 2em;
+}
+
+#behind-the-dough {
+  background-color: black;
+  color: white;
+  padding: 2em 0;
+}
